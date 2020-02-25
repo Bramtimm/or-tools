@@ -30,10 +30,10 @@ PARSER.add_argument('--params', default="", help='Sat solver parameters.')
 
 
 def negated_bounded_span(works, start, length):
-    """Filters an isolated sub-sequence of variables assined to True.
+    """Filters an isolated sub-sequence of variables assigned to True.
 
   Extract the span of Boolean variables [start, start + length), negate them,
-  and if there is variables to the left/right of this span, surround the span by
+  and if there is variables to the left/right of this span, surrounds the span by
   them in non negated form.
 
   Args:
@@ -202,7 +202,7 @@ def solve_shift_scheduling(params, output_proto):
         (3, 1, 0),
         (4, 2, 0),
         (5, 2, 0),
-        (6, 2, 3),
+        (6, 2, 0),
         (7, 3, 0),
         (0, 1, 1),
         (1, 1, 1),
